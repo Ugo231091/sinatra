@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>The Gossip Project</title>
+  </head>
+  <body>
+    <h1>Mon super site de gossip, depuis le dossier views !</h1>
+    <a href="/gossips/new/"> "Créer un nouveau gossip" </a>
+    
+    <% id_gossip = 0 %>
+    <% gossips.each do |gossip| %>
+      
+      <p>
+        ID gossip n° <%= id_gossip%> <br/>
+        <%= gossip.author %> <br/>
+        <%= gossip.content %>
+      </p>
+      <% id_gossip = id_gossip + 1 %>
+    <% end %>
+
+    
+
+  </body>
+  
+ 
+
+
+
+</html>
